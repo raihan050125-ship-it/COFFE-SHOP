@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja - Menemukan Kehangatan di Setiap Sesapan</title>
+    <style>
+        /* GOOGLE FONTS */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FDFBF7; /* Cream Lembut */
+            color: #3D2314; /* Cokelat Espresso */
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(253, 251, 247, 0.9), rgba(253, 251, 247, 0.9)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000') no-repeat center/cover;
+            border-bottom: 2px dashed #C97A53;
+        }
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #3D2314;
+        }
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #C97A53; /* Terakota */
+            margin: 15px 0 30px;
+        }
+        .btn-menu {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #3D2314;
+            color: #FDFBF7;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-menu:hover {
+            background-color: #C97A53;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* MENU SECTION */
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #C97A53;
+            margin: 10px auto 0;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .menu-category h3 {
+            font-family: 'Playfair Display', serif;
+            border-bottom: 1px solid #3D2314;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .menu-name {
+            font-weight: bold;
+        }
+        .menu-price {
+            color: #C97A53;
+            font-weight: bold;
+        }
+
+        /* ADDRESS SECTION */
+        .address-box {
+            background-color: #F5EFE6;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 60px;
+            border: 1px solid #E4DCCF;
+        }
+        .address-box h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        /* FOOTER / MEDSOS */
+        footer {
+            background-color: #3D2314;
+            color: #FDFBF7;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: #FDFBF7;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            color: #C97A53;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <div class="logo-text">Kopi Senja</div>
+        <div class="tagline">"Menemukan Kehangatan di Setiap Sesapan"</div>
+        <a href="#menu" class="btn-menu">Lihat Menu</a>
+    </header>
+
+    <div class="container">
+        <!-- MENU SECTION -->
+        <section id="menu">
+            <h2 class="section-title">Menu Pilihan Kami</h2>
+            <div class="menu-grid">
+                <!-- Kopi -->
+                <div class="menu-category">
+                    <h3>☕ Coffee (Panas/Es)</h3>
+                    <div class="menu-item"><span class="menu-name">Espresso</span><span class="menu-price">Rp 15.000</span></div>
+                    <div class="menu-item"><span class="menu-name">Americano</span><span class="menu-price">Rp 18.000</span></div>
+                    <div class="menu-item"><span class="menu-name">Kopi Susu Senja</span><span class="menu-price">Rp 20.000</span></div>
+                    <div class="menu-item"><span class="menu-name">Caramel Macchiato</span><span class="menu-price">Rp 25.000</span></div>
+                </div>
+                <!-- Non Kopi -->
+                <div class="menu-category">
+                    <h3>🍰 Non-Coffee & Cemilan</h3>
+                    <div class="menu-item"><span class="menu-name">Matcha Latte</span><span class="menu-price">Rp 22.000</span></div>
+                    <div class="menu-item"><span class="menu-name">Choco Almond</span><span class="menu-price">Rp 24.000</span></div>
+                    <div class="menu-item"><span class="menu-name">Croissant Butter</span><span class="menu-price">Rp 18.000</span></div>
+                    <div class="menu-item"><span class="menu-name">French Fries</span><span class="menu-price">Rp 15.000</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADDRESS SECTION -->
+        <section class="address-box">
+            <h3>📍 Temukan Kami</h3>
+            <p>Jl. Cerita Indah No. 42, Kota Sejahtera</p>
+            <p style="font-size: 0.9rem; color: #7A6652; margin-bottom: 10px;">(Samping Taman Kota, Seberang Gedung Putih)</p>
+            <p><strong>🕒 Jam Buka:</strong> Setiap Hari (09.00 - 23.00 WIB)</p>
+        </section>
+    </div>
+
+    <!-- FOOTER / MEDSOS -->
+    <footer>
+        <p>© 2026 Kopi Senja. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>|
+            <a href="#">TikTok</a>|
+            <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>
